@@ -1,6 +1,6 @@
 import streamlit as st
 
 st.write("""
-# Financial Tracking
-Abaixo temos as recomendações de investimento para os ativos
+# Anny, eu te amo
+         *Você para mim é única no mundo!*
 """)
