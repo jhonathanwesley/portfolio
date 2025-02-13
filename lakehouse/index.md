@@ -1,0 +1,1 @@
+# Construção de um Lakehouse com arquitetura medalhão
