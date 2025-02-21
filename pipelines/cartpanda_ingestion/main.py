@@ -1,4 +1,4 @@
-from components import save_bigquery, login_bigquery
+from library import save_bigquery, login_bigquery
 from airflow.operators.python import PythonOperator
 from google.oauth2 import service_account
 from datetime import datetime, timedelta
