@@ -6,9 +6,7 @@ from google.cloud import bigquery
 from airflow import DAG
 from time import sleep
 import pandas as pd
-import pandas_gbq
 import requests
-import time
 
 __author__ = 'Jhonathan Wesley'
 
@@ -168,24 +166,27 @@ def process_shipping_batch():
 def update_shipping_into_cartpanda_orders():
     """Roda UPDATE dos fretes processados na tabela final completa"""
     # Consulta fretes processados com sucesso
-    query = """UPDATE `google_cloud_project.schema_name.orders_table` AS co
+    query = """
+        UPDATE `google_cloud_project.schema_name.orders_table` AS co
         SET
         co.frete_valor = cps.frete_valor,
         co.frete_id = cps.frete_id,
         co.frete_order_id = cps.frete_order_id,
         co.frete_title = cps.frete_title,
-        co.frete_created_at = cps.frete_created_at,
-        co.frete_updated_at = cps.frete_updated_at,
+        co.frete_created_at = CAST(cps.frete_created_at AS DATETIME),
+        co.frete_updated_at = CAST(cps.frete_updated_at AS DATETIME),
         co.frete_gateway = cps.frete_gateway,
-        co.shipping_gateway = cps.shipping_gateway,
         co.shipping_processed_status = 'processed'
         FROM `google_cloud_project.schema_name.processed_shipping_table` AS cps
-        WHERE co.id = cps.frete_order_id"""
+        WHERE co.id = cps.frete_order_id
+        AND co.shipping_processed_status = 'not_processed'
+        """
 
     try:
-        login_bigquery(query=query)
-    except:
+        login_bigquery(query)
         print(f'O UPDATE foi realizado com sucesso no Big Query')
+    except Exception as e:
+        print(f"Erro na operação: {e}")
 
 # Define as tasks
 atualizing_stage_table_task = PythonOperator(
