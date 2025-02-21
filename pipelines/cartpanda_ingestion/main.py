@@ -8,7 +8,7 @@ from time import sleep
 import pandas as pd
 import requests
 
-__author__ = 'Anônimo'
+__author__ = 'Jhonathan Wesley Faria Dias Alves'
 
 # Configurações da DAG
 default_args = {
