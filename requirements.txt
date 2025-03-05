@@ -1,8 +1,0 @@
-psycopg2-binary
-pandas_gbq
-sqlalchemy
-ipykernel
-fireducks
-streamlit
-requests
-pandas
