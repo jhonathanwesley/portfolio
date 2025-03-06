@@ -1,2 +1,3 @@
-# portfolio
-This repository will store my portifolio
+# Portfolio
+
+> Demo of executed projects
