@@ -1,3 +1,3 @@
 # Portfolio
 
-> Demo of executed projects
+> A few data projects
