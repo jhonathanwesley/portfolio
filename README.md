@@ -1,13 +1,13 @@
-# Portfolio
+# Home
+> Here lives the Hub for My Projects
 
 ## Data projects
 
-> Pipeline de dados do CartPanda
+> CartPanda Data Pipeline
 
-- [Explicação](https://github.com/jhonathanwesley/portfolio/blob/main/pipelines/cartpanda_ingestion/info.md)
-- [Código](https://github.com/jhonathanwesley/portfolio/blob/main/pipelines/cartpanda_ingestion/main.py)
+- [Explanation](https://github.com/jhonathanwesley/portfolio/blob/main/pipelines/cartpanda_ingestion/info.md)
+- [Code](https://github.com/jhonathanwesley/portfolio/blob/main/pipelines/cartpanda_ingestion/main.py)
 
-> API com FastAPI
+> API with FastAPI
 
-- [Repositório](https://github.com/jhonathanwesley/fastapi)
-
+- [Repository](https://github.com/jhonathanwesley/fastapi)
