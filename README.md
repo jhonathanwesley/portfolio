@@ -5,10 +5,12 @@ Here lives the Hub for My Projects
 
 > CartPanda Data Pipeline
 
-- [Explanation](https://github.com/jhonathanwesley/portfolio/blob/main/pipelines/cartpanda_ingestion/info.md)
-- [Code](https://github.com/jhonathanwesley/portfolio/blob/main/pipelines/cartpanda_ingestion/main.py)
+- [Explanation](https://github.com/jhonathanwesley/portfolio/blob/main/pipelines/cartpanda_ingestion/ProjectDescription.md)
+
+- [Explicação](https://github.com/jhonathanwesley/portfolio/blob/main/pipelines/cartpanda_ingestion/DescricaoDoProjeto.md)
+
+- [Project Code](https://github.com/jhonathanwesley/portfolio/blob/main/pipelines/cartpanda_ingestion/main.py)
 
 > API with FastAPI
 
 - [Repository](https://github.com/jhonathanwesley/fastapi)
-
